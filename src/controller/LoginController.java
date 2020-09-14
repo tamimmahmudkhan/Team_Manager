@@ -64,7 +64,7 @@ public class LoginController implements Initializable, ChatServer.HostApplicatio
 	private void login(ActionEvent event) {
 		Window window = ((Button)event.getSource()).getScene().getWindow();
 
-//		launchWindow((Stage)window,	"/view/StaffWindow.fxml"); // DELETE DIS
+		launchWindow((Stage)window,	"/view/StaffWindow.fxml"); // DELETE DIS
 		if (positionBox.getSelectionModel().getSelectedItem() == Position.Admin) {
 			if (manager.checkEmployee(emailText.getText(), passText.getText()))
 			{

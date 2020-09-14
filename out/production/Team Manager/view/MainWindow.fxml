@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+
+<TabPane fx:id="parentPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+  <tabs>
+    <Tab text="Employee">
+      <content>
+        <fx:include fx:id="staffWindow" source="StaffWindow.fxml" />
+      </content>
+    </Tab>
+    <Tab text="Projects">
+      <content>
+        <fx:include fx:id="projectWindow" source="ProjectTable.fxml" />
+      </content>
+    </Tab>
+      <Tab text="Teams">
+        <content>
+          <fx:include fx:id="teamTable" source="TeamTable.fxml" />
+        </content>
+      </Tab>
+      <Tab text="Chat">
+        <content>
+          <fx:include fx:id="chatTab" source="ChatWindow.fxml" />
+        </content>
+      </Tab>
+  </tabs>
+</TabPane>

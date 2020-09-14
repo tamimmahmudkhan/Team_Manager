@@ -15,7 +15,7 @@ public class Main extends Application
 		try {
 			Parent root = FXMLLoader.load(getClass().getResource("/view/Login.fxml"));
 			Scene scene = new Scene(root, 300, 300);
-//			scene.getStylesheets().add(getClass().getResource("/view/themes/modena_dark.css").toExternalForm());
+			scene.getStylesheets().add(getClass().getResource("/view/themes/modena_dark.css").toExternalForm());
 			primaryStage.setTitle("Inventory Login"); 
 			primaryStage.setScene(scene);
 			primaryStage.setResizable(false);
